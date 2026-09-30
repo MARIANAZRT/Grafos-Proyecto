@@ -130,7 +130,7 @@ def calcular_y_visualizar(G):
         <p style="margin: 6px 0;"><b>Aristas |A|:</b> {edges_cnt}</p>
         
         <h3 style="color: #ff4757; font-size: 15px; margin-top: 14px; margin-bottom: 6px;">
-            🔴 Emparejamiento Óptimo
+            Emparejamiento Óptimo
         </h3>
         <ul style="margin: 0; padding-left: 20px; color: #dddddd; font-size: 14px;">
             {html_matching}
