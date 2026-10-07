@@ -88,8 +88,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#4aa3df", "font": {"color": "white"}, "id": "1", "label": "1", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 1\u003cbr\u003eGrado: 3\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "2", "label": "2", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 2\u003cbr\u003eGrado: 3\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "3", "label": "3", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 3\u003cbr\u003eGrado: 3\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "4", "label": "4", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 4\u003cbr\u003eGrado: 4\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "5", "label": "5", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 5\u003cbr\u003eGrado: 2\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "6", "label": "6", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 6\u003cbr\u003eGrado: 3\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "7", "label": "7", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 7\u003cbr\u003eGrado: 2\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "8", "label": "8", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 8\u003cbr\u003eGrado: 0\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "9", "label": "9", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 9\u003cbr\u003eGrado: 0\u003cbr\u003eBucles: 0"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "0", "label": "0", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 0\u003cbr\u003eGrado: 0\u003cbr\u003eBucles: 0"}]);
-                  edges = new vis.DataSet([{"color": "#747d8c", "from": "1", "to": "2", "width": 1.5}, {"color": "#ff4757", "from": "1", "title": "EMPAREJADO", "to": "3", "width": 5}, {"color": "#747d8c", "from": "1", "to": "4", "width": 1.5}, {"color": "#747d8c", "from": "2", "to": "3", "width": 1.5}, {"color": "#747d8c", "from": "2", "to": "4", "width": 1.5}, {"color": "#747d8c", "from": "3", "to": "6", "width": 1.5}, {"color": "#ff4757", "from": "4", "title": "EMPAREJADO", "to": "5", "width": 5}, {"color": "#747d8c", "from": "4", "to": "6", "width": 1.5}, {"color": "#747d8c", "from": "5", "to": "7", "width": 1.5}, {"color": "#ff4757", "from": "6", "title": "EMPAREJADO", "to": "7", "width": 5}]);
+                  nodes = new vis.DataSet([{"color": "#4aa3df", "font": {"color": "white"}, "id": "1", "label": "1", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 1"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "2", "label": "2", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 2"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "3", "label": "3", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 3"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "4", "label": "4", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 4"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "5", "label": "5", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 5"}, {"color": "#4aa3df", "font": {"color": "white"}, "id": "6", "label": "6", "shape": "dot", "size": 25, "title": "V\u00e9rtice: 6"}]);
+                  edges = new vis.DataSet([{"color": "#747d8c", "from": "1", "to": "3", "width": 1.5}, {"color": "#ff4757", "from": "1", "title": "EMPAREJADO", "to": "5", "width": 5}, {"color": "#747d8c", "from": "2", "to": "4", "width": 1.5}, {"color": "#ff4757", "from": "2", "title": "EMPAREJADO", "to": "6", "width": 5}, {"color": "#ff4757", "from": "3", "title": "EMPAREJADO", "to": "4", "width": 5}, {"color": "#747d8c", "from": "3", "to": "6", "width": 1.5}, {"color": "#747d8c", "from": "4", "to": "5", "width": 1.5}, {"color": "#747d8c", "from": "5", "to": "6", "width": 1.5}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
@@ -157,144 +157,28 @@
         top: 20px;
         left: 20px;
         z-index: 999;
-        background-color: rgba(30, 30, 30, 0.94);
+        background-color: rgba(30, 30, 30, 0.92);
         color: #ffffff;
         padding: 18px;
         border-radius: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
         border: 1px solid #444;
-        max-width: 360px;
-        max-height: 90vh;
-        overflow-y: auto;
+        max-width: 320px;
     ">
-
-        <h2 style="
-            margin-top: 0;
-            color: #4aa3df;
-            font-size: 18px;
-            border-bottom: 1px solid #444;
-            padding-bottom: 8px;
-        ">
+        <h2 style="margin-top: 0; color: #4aa3df; font-size: 18px; border-bottom: 1px solid #444; padding-bottom: 8px;">
             📊 Información del Grafo
         </h2>
-
-        <p style="margin: 6px 0;">
-            <b>Tipo:</b> No dirigido (Graph)
-        </p>
-
-        <p style="margin: 6px 0;">
-            <b>Vértices |V|:</b> 10
-        </p>
-
-        <p style="margin: 6px 0;">
-            <b>Aristas |A|:</b> 10
-        </p>
-
-
-        <!-- PROPIEDADES DE LOS VÉRTICES -->
-
-        <h3 style="
-            color: #2ed573;
-            font-size: 15px;
-            margin-top: 16px;
-            margin-bottom: 8px;
-        ">
-            📌 Propiedades de los Vértices
-        </h3>
-
-        <ul style="
-            margin: 0;
-            padding-left: 20px;
-            color: #dddddd;
-            font-size: 14px;
-        ">
-            
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 1</b>
-            → Grado: <b>3</b>
-            | Bucles: <b>0</b>
-        </li>
+        <p style="margin: 6px 0;"><b>Tipo:</b> No dirigido (Graph)</p>
+        <p style="margin: 6px 0;"><b>Vértices |V|:</b> 6</p>
+        <p style="margin: 6px 0;"><b>Aristas |A|:</b> 8</p>
         
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 2</b>
-            → Grado: <b>3</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 3</b>
-            → Grado: <b>3</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 4</b>
-            → Grado: <b>4</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 5</b>
-            → Grado: <b>2</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 6</b>
-            → Grado: <b>3</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 7</b>
-            → Grado: <b>2</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 8</b>
-            → Grado: <b>0</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 9</b>
-            → Grado: <b>0</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        <li style="margin-bottom: 6px;">
-            <b>Vértice 0</b>
-            → Grado: <b>0</b>
-            | Bucles: <b>0</b>
-        </li>
-        
-        </ul>
-
-
-        <!-- EMPAREJAMIENTO -->
-
-        <h3 style="
-            color: #ff4757;
-            font-size: 15px;
-            margin-top: 16px;
-            margin-bottom: 6px;
-        ">
+        <h3 style="color: #ff4757; font-size: 15px; margin-top: 14px; margin-bottom: 6px;">
             🔴 Emparejamiento Óptimo
         </h3>
-
-        <ul style="
-            margin: 0;
-            padding-left: 20px;
-            color: #dddddd;
-            font-size: 14px;
-        ">
-            <li><b>3</b> &lt;---&gt; <b>1</b></li><li><b>5</b> &lt;---&gt; <b>4</b></li><li><b>7</b> &lt;---&gt; <b>6</b></li>
+        <ul style="margin: 0; padding-left: 20px; color: #dddddd; font-size: 14px;">
+            <li><b>5</b> &lt;---&gt; <b>1</b></li><li><b>6</b> &lt;---&gt; <b>2</b></li><li><b>4</b> &lt;---&gt; <b>3</b></li>
         </ul>
-
-
-        <!-- BOTÓN DE DESCARGA -->
 
         <button onclick="descargarReporte()" style="
             margin-top: 15px;
@@ -307,60 +191,29 @@
             cursor: pointer;
             font-weight: bold;
             font-size: 13px;
-        ">
-            📥 Descargar Resumen (.txt)
-        </button>
-
+        ">📥 Descargar Resumen (.txt)</button>
     </div>
 
-
     <script>
-
     function descargarReporte() {
-
-        const contenido =
-            `======================================\n` +
-            `       REPORTE DEL GRAFO G = (V, A)   \n` +
-            `======================================\n` +
-            `Tipo de Grafo : No dirigido (Graph)\n` +
-            `Num Vértices  : 10\n` +
-            `Num Aristas   : 10\n\n` +
-
-            `PROPIEDADES DE LOS VÉRTICES:\n` +
-            ` - Vértice 1: Grado = 3, Bucles = 0
- - Vértice 2: Grado = 3, Bucles = 0
- - Vértice 3: Grado = 3, Bucles = 0
- - Vértice 4: Grado = 4, Bucles = 0
- - Vértice 5: Grado = 2, Bucles = 0
- - Vértice 6: Grado = 3, Bucles = 0
- - Vértice 7: Grado = 2, Bucles = 0
- - Vértice 8: Grado = 0, Bucles = 0
- - Vértice 9: Grado = 0, Bucles = 0
- - Vértice 0: Grado = 0, Bucles = 0
-\n` +
-
-            `EMPAREJAMIENTO ÓPTIMO:\n` +
-            ` - 3 <---> 1
- - 5 <---> 4
- - 7 <---> 6\n`;
-
-        const blob = new Blob(
-            [contenido],
-            {
-                type: 'text/plain;charset=utf-8'
-            }
-        );
-
+        const contenido = `======================================\n` +
+                          `       REPORTE DEL GRAFO G = (V, A)   \n` +
+                          `======================================\n` +
+                          `Tipo de Grafo : No dirigido (Graph)\n` +
+                          `Num Vértices  : 6\n` +
+                          `Num Aristas   : 8\n\n` +
+                          `EMPAREJAMIENTO ÓPTIMO:\n` +
+                          ` - 5 <---> 1
+ - 6 <---> 2
+ - 4 <---> 3\n`;
+                          
+        const blob = new Blob([contenido], { type: 'text/plain;charset=utf-8' });
         const enlace = document.createElement('a');
-
         enlace.href = URL.createObjectURL(blob);
-
         enlace.download = 'reporte_grafo.txt';
-
         enlace.click();
-
     }
-
     </script>
+    </body>
     
 </html>
